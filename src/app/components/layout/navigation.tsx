@@ -6,10 +6,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { navLinks } from "../../utils/data";
 import { motion, AnimatePresence } from "framer-motion";
 import { BiX, BiMenu } from "react-icons/bi";
-import { FaPhoneAlt } from "react-icons/fa";
 import Image from "next/image";
-import { RxAvatar } from "react-icons/rx";
-import { BsCart4 } from "react-icons/bs";
 
 export default function Navigation() {
     const [isScroll, setIsScroll] = useState(false);
