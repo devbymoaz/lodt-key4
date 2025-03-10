@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { navLinks } from "../../utils/data";
 import { motion, AnimatePresence } from "framer-motion";
 import { BiX, BiMenu } from "react-icons/bi";
@@ -11,9 +11,7 @@ import Image from "next/image";
 export default function Navigation() {
     const [isScroll, setIsScroll] = useState(false);
     const pathname = usePathname();
-    const [total, setLength] = useState<string[]>([]);
     const [isOpen, setIsOpen] = useState(false);
-    const router = useRouter();
 
     // Track Scroll Position
     useEffect(() => {
