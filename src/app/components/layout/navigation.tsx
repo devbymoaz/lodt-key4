@@ -7,6 +7,7 @@ import { navLinks } from "../../utils/data";
 import { motion, AnimatePresence } from "framer-motion";
 import { BiX, BiMenu } from "react-icons/bi";
 import Image from "next/image";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Navigation() {
     const [isScroll, setIsScroll] = useState(false);
