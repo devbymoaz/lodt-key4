@@ -5,14 +5,14 @@ export default function TryIt() {
     return (
         <div className="relative w-full min-h-[50vh] flex flex-col lg:flex-row items-center justify-center">
             <Image
-                src="/3ff1d8_3154cb42fa99412096b1de7912173c91~mv2.jpg"
+                src="/pexels-victormoragriega-31101938.jpg"
                 alt="Background"
                 fill
                 priority
                 className="object-cover -z-10"
             />
             
-            <div className="absolute inset-0 bg-[#3B3B3B] opacity-80 -z-10"></div>
+            <div className="absolute inset-0 bg-bgAll opacity-60 -z-10"></div>
 
             <div className="relative w-full lg:w-1/2 h-1/2 lg:h-full flex items-center justify-center p-6 lg:p-10 text-center lg:text-left">
                 <div className="text-white space-y-4 max-w-lg">

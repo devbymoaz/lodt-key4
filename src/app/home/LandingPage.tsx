@@ -17,9 +17,9 @@ export default function LandingPage() {
       <WhyLostKey/>
       <RegistrationProcess/>
       <SeaShop/>
-      <TryIt/>
       <LostKeySection/>
       <EffortLessSection/>
+      <TryIt/>
       <Testimonials/>
       <NewsletterSection/>
     </>

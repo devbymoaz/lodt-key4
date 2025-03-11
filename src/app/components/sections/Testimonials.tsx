@@ -60,7 +60,7 @@ const Testimonials: React.FC = () => {
 
   return (
     <div
-      className="py-16 px-6 sm:px-10 lg:px-20 bg-[#F5F9FF] relative flex flex-col items-center"
+      className="py-16 px-6 sm:px-10 lg:px-20 bg-bgAll text-textAll relative flex flex-col items-center"
       style={{
         backgroundImage: `url('/Group 6.png'), url('/Group 5.png')`,
         backgroundPosition: "800px 200px, 360px 430px",
@@ -68,7 +68,7 @@ const Testimonials: React.FC = () => {
         backgroundRepeat: "no-repeat, no-repeat",
       }}
     >
-      <h1 className="text-2xl md:text-3xl lg:text-[52px] font-bold text-primary text-center mb-12 font-pally">
+      <h1 className="text-2xl md:text-3xl lg:text-[52px] font-bold  text-center mb-12 font-pally">
       CUSTOMER TESTIMONIALS
       </h1>
 
@@ -120,7 +120,7 @@ const Testimonials: React.FC = () => {
             height={48}
             className="rounded-full border-2 border-gray-300"
           />
-          <h4 className="text-lg md:text-2xl font-pally font-bold text-primary">
+          <h4 className="text-lg md:text-2xl text-primary font-pally font-bold ">
             {testimonial.name}
           </h4>
         </div>
@@ -138,13 +138,13 @@ const Testimonials: React.FC = () => {
       <div className="mt-32 mb-12 flex justify-center items-center space-x-6">
         <button
           onClick={handlePrev}
-          className="bg-gray-300 text-black p-3 rounded-full hover:bg-primary transition hover:text-white"
+          className="bg-gray-300 text-black p-3 rounded-full "
         >
           <FaChevronLeft className="text-lg" />
         </button>
         <button
           onClick={handleNext}
-          className="bg-gray-300 text-black p-3 rounded-full hover:bg-primary transition hover:text-white"
+          className="bg-gray-300 text-black p-3 rounded-full "
         >
           <FaChevronRight className="text-lg" />
         </button>

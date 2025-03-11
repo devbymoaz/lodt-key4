@@ -16,17 +16,17 @@ export default function RegistrationProcess() {
                 className="object-cover -z-10"
             />
 
-            <div className="relative w-full lg:w-1/2 h-1/2 lg:h-full bg-[#E0E4E5]/90 flex flex-col items-center justify-evenly p-6 md:p-10">
+            <div className="relative w-full lg:w-1/2 h-1/2 lg:h-full bg-bgAll/60 flex flex-col items-center justify-evenly p-6 md:p-10">
                 {data.map((val, ind) => (
-                    <div key={ind} className="text-black max-w-lg space-y-2 text-center lg:text-left">
-                        <h1 className="text-2xl md:text-4xl font-bold text-primary">{val.title}</h1>
+                    <div key={ind} className="text-textAll max-w-lg space-y-2 text-center lg:text-left">
+                        <h1 className="text-2xl md:text-4xl font-bold text-textAll">{val.title}</h1>
                         <p className="text-lg">{val.description}</p>
                     </div>
                 ))}
             </div>
 
             <div className="relative w-full lg:w-1/2 h-1/2 lg:h-full flex items-center justify-center lg:justify-start p-6 md:p-10">
-                <div className="text-white text-center lg:text-left">
+                <div className="text-textAll text-center lg:text-left">
                     <h2 className="text-5xl md:text-7xl font-bold leading-tight">
                         In just <br /> 20 seconds
                     </h2>

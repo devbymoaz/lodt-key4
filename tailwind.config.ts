@@ -10,6 +10,8 @@ export default {
     extend: {
       colors: {
         primary:'#3B3B3B',
+        bgAll:'#3B3B3B',
+        textAll:"#fff",
         secondary:'#324158',
       },
       fontFamily: {

@@ -4,11 +4,8 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Button from "../common/button/Button";
-// import { FaBagShopping } from "react-icons/fa6";
-// import { FaMobileAlt } from "react-icons/fa";
-// import { GiHouseKeys } from "react-icons/gi";
-// import { MdOutlinePets } from "react-icons/md";
-// import { IoMdWallet } from "react-icons/io";
+import { useRouter } from "next/navigation";
+
 
 export default function CustomHeroSection() {
   const images = [
@@ -25,9 +22,11 @@ export default function CustomHeroSection() {
     }, 3000);
     return () => clearInterval(interval);
   }, [images.length]);
-
+  const router = useRouter()
   const nextIndex = (currentIndex + 1) % images.length;
-
+  const handleShop = () => {
+    router.push("/shop")
+  }
 
   return (
     <div className="relative w-full h-[70vh] overflow-hidden">
@@ -67,29 +66,31 @@ export default function CustomHeroSection() {
 
       {/* Hero Text */}
       <div className="absolute inset-0 flex flex-col justify-center gap-5 items-center text-white text-center px-4">
-      <div>
-  <motion.h1
-  style={{ textShadow: "2px 2px 15px rgba(0, 0, 0, 0.5)" }}
-    className="text-3xl sm:text-4xl md:text-6xl font-bold text-white drop-shadow-xl"
-    initial={{ opacity: 0, y: -20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1, delay: 0.5 }}
-  >
-    Online Lost And Found
-  </motion.h1>
+        <div>
+          <motion.h1
+            style={{ textShadow: "2px 2px 15px rgba(0, 0, 0, 0.5)" }}
+            className="text-3xl sm:text-4xl md:text-6xl font-bold text-white drop-shadow-xl"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
+            Online Lost And Found
+          </motion.h1>
 
-  <motion.p
-  style={{ textShadow: "6px 6px 10px rgba(0, 0, 0, 0.5)" }}
-    className="text-base sm:text-lg md:text-2xl mt-4 font-bold text-white drop-shadow-lg"
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1, delay: 0.8 }}
-  >
-    The fastest Lost and Found office in the world
-  </motion.p>
-</div>
-
-        <Button className="text-white rounded-full bg-primary border border-white">To the shop</Button>
+          <motion.p
+            style={{ textShadow: "6px 6px 10px rgba(0, 0, 0, 0.5)" }}
+            className="text-base sm:text-lg md:text-2xl mt-4 font-bold text-white drop-shadow-lg"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.8 }}
+          >
+            The fastest Lost and Found office in the world
+          </motion.p>
+        </div>
+        <div className="flex items-center gap-3">
+          <Button onClick={handleShop} className="text-white rounded-full bg-primary border border-white">To the shop</Button>
+          <p className="text-white underline text-xl font-bold cursor-pointer">I have lost my key</p>
+        </div>
       </div>
 
 
