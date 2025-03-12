@@ -34,7 +34,7 @@ export default function Navigation() {
                 }`}
         >
             <div className="bg-secondary p-2 text-center text-white text-sm sm:text-base">
-                Free shipping from 20€ | Delivery time 1-3 working days
+                Free shipping from 50€ | Delivery time 1-3 working days
             </div>
 
             <div className=" px-6 md:px-16 flex w-full items-center justify-between py-4">

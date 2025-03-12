@@ -5,13 +5,13 @@ export default function ShopSection() {
   return (
     <div className="relative w-full h-[75vh]">
       <Image
-        src="/a8f8c3_c741f38b46594d8ba078058444f6dfef~mv2 (1).jpg"
+        src="/pexels-cottonbro-5914922.jpg"
         alt="Background"
         fill
         className="object-cover"
       />
 
-      <div className="absolute inset-y-0 left-0 w-1/2 bg-bgAll/60 flex items-center justify-center p-10 sm:p-6">
+      <div className="absolute inset-y-0 left-0 w-1/2 bg-bgAll/70 flex items-center justify-center p-10 sm:p-6">
         <div className="w-full lg:w-2/3 h-auto flex flex-col items-center gap-3 p-4 md:p-8">
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-textAll text-center leading-tight">
             Secure your <br /> treasures

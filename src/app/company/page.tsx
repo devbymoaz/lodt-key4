@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Page() {
   return (
-    <div>
+    <div className="bg-bgAll text-textAll">
       <NewsHeroSection
         imageSrc="/pexels-busra-altin-60338887-30780540.jpg"
         title="The promotional item of the 21st century!"
@@ -22,13 +22,13 @@ export default function Page() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+          <h2 className="text-3xl md:text-5xl font-bold">
             A Seamless Shopping Experience
           </h2>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg ">
             Our streamlined process ensures a smooth experience from product selection to QR code generation. Follow these simple steps to get started.
           </p>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <ul className="list-disc list-inside  space-y-2">
             <li><span className="font-bold">Step 1:</span> Browse and add your favorite items to the cart.</li>
             <li><span className="font-bold">Step 2:</span> Enter the required details to personalize your experience.</li>
             <li><span className="font-bold">Step 3:</span> Instantly generate a QR code for your purchase.</li>
@@ -56,7 +56,7 @@ export default function Page() {
       {/* QR Code Process */}
       <section className="container mx-auto py-16 px-6 text-center">
         <motion.h2 
-          className="text-3xl md:text-5xl font-bold text-gray-900 mb-6"
+          className="text-3xl md:text-5xl font-bold   mb-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -64,7 +64,7 @@ export default function Page() {
           Effortless Access with QR Codes
         </motion.h2>
         <motion.p
-          className="text-lg text-gray-700 max-w-2xl mx-auto mb-8"
+          className="text-lg  max-w-2xl mx-auto mb-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
