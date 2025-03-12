@@ -2,13 +2,11 @@
 
 import { useState } from 'react';
 import Button from '../components/common/button/Button';
-import Image from 'next/image';
 import { shopItems } from '../utils/data';
 import ShopCard from '../components/sections/ShopCard';
 
 export default function NewsletterSection() {
     const [email, setEmail] = useState('');
-    const [code, setCode] = useState('');
 
     return (
         <>
