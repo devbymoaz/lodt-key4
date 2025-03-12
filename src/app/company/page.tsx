@@ -55,38 +55,67 @@ export default function Page() {
 
       {/* QR Code Process */}
       <section className="container mx-auto py-16 px-6 text-center">
-        <motion.h2 
-          className="text-3xl md:text-5xl font-bold   mb-6"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          Effortless Access with QR Codes
-        </motion.h2>
-        <motion.p
-          className="text-lg  max-w-2xl mx-auto mb-8"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2 }}
-        >
-          Once you complete your order, a unique QR code is generated. Simply scan it to access all relevant details instantly.
-        </motion.p>
-        
-        {/* QR Code Image */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2 }}
-        >
-          <Image
-            src="/pexels-pavel-danilyuk-7937958.jpg"
-            alt="QR Code Process"
-            width={400}
-            height={300}
-            className="mx-auto rounded-lg shadow-lg"
-          />
-        </motion.div>
-      </section>
+      {/* Heading */}
+      <motion.h2 
+        className="text-3xl md:text-5xl font-bold mb-6"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        Effortless Access with QR Codes
+      </motion.h2>
+
+      {/* Description */}
+      <motion.p
+        className="text-lg max-w-2xl mx-auto mb-8"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2 }}
+      >
+        Once you complete your order, a unique QR code is generated. Simply scan it to access all relevant details instantly.
+      </motion.p>
+
+      {/* Additional Content */}
+      <motion.p
+        className="text-base max-w-xl mx-auto mb-6 "
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.4 }}
+      >
+        No need to worry about lost receipts or lengthy confirmation emails. 
+        Your QR code acts as a digital key to unlock order details, track shipping, and enjoy exclusive benefits.
+      </motion.p>
+
+      {/* QR Code Image */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.2 }}
+      >
+        <Image
+          src="/pexels-pavel-danilyuk-7937958.jpg"
+          alt="QR Code Process"
+          width={400}
+          height={300}
+          className="mx-auto rounded-lg shadow-lg"
+        />
+      </motion.div>
+
+      {/* Additional Benefits */}
+      <motion.ul 
+        className="max-w-2xl mx-auto mt-8 text-left text-lg space-y-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+      >
+        <li>✔️ Instant order access</li>
+        <li>✔️ Easy tracking & updates</li>
+        <li>✔️ Secure and contactless retrieval</li>
+        <li>✔️ No need for printed receipts</li>
+      </motion.ul>
+
+     
+    </section>
     </div>
   );
 }

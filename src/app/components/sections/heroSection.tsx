@@ -89,7 +89,7 @@ export default function CustomHeroSection() {
         </div>
         <div className="flex items-center gap-3">
           <Button onClick={handleShop} className="text-white rounded-full bg-primary border border-white">To the shop</Button>
-          <p className="text-white underline text-xl font-bold cursor-pointer">I have lost my key</p>
+          <p className="text-white rounded-full bg-red-500 border font-semibold px-6 py-2">I have lost my key</p>
         </div>
       </div>
 

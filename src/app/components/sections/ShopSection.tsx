@@ -16,7 +16,7 @@ export default function ShopSection() {
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-textAll text-center leading-tight">
             Secure your <br /> treasures
           </h1>
-          <p className="text-sm md:text-base text-center text-textAll">Free shipping from 20€</p>
+          <p className="text-sm md:text-base text-center text-textAll">Free shipping from 50€</p>
           <FaChevronDown size={24} className="text-textAll" />
           <p className="text-sm md:text-base text-center text-textAll">
             Save 10% when you buy 3 products or <br /> more

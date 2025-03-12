@@ -11,6 +11,7 @@ export default function ProductDetail() {
   const { id } = useParams();
   const router = useRouter();  
   const product = shopItems.find((item) => item.id === Number(id));
+  const [isBuying, setIsBuying] = useState(false);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -35,10 +36,12 @@ export default function ProductDetail() {
 
   const handleAddToCart = () => {
     setIsModalOpen(true);
+    setIsBuying(false); // Ensure it's not a buy action
   };
-
+  
   const handleBuy = () => {
-    router.push("/checkout"); 
+    setIsModalOpen(true);
+    setIsBuying(true); // Mark that "Buy Now" was clicked
   };
 
   const handleSubmit = () => {
@@ -49,15 +52,22 @@ export default function ProductDetail() {
       image: product.image,
       userDetails: formData,
     };
-
-    const cartItems = JSON.parse(localStorage.getItem("cartItems") || "[]");
-    cartItems.push(newCartItem);
-    localStorage.setItem("cartItems", JSON.stringify(cartItems));
-
-    setIsModalOpen(false);
-    alert("Product added to cart successfully!");
-    
-    router.push("/addToCart"); 
+  
+    if (isBuying) {
+      // Navigate to checkout after modal submission
+      setIsModalOpen(false);
+      router.push("/checkout");
+    } else {
+      // Add to cart logic
+      const cartItems = JSON.parse(localStorage.getItem("cartItems") || "[]");
+      cartItems.push(newCartItem);
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  
+      setIsModalOpen(false);
+      alert("Product added to cart successfully!");
+      
+      router.push("/addToCart");
+    }
   };
 
   return (

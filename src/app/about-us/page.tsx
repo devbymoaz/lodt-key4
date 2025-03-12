@@ -49,7 +49,7 @@ export default function AboutUsPage() {
       >
         <div className="w-1/2 h-full relative">
           <Image 
-            src="/pexels-busra-altin-60338887-30780540.jpg" 
+            src="/pexels-belle-co-99483-783683.jpg" 
             alt="Our Values" 
             layout="fill" 
             objectFit="cover" 
@@ -158,18 +158,7 @@ export default function AboutUsPage() {
           />
         </div>
       </motion.section>
-      {/* Community Engagement */}
-      <motion.section 
-        className="container mx-auto py-16 px-6 text-center"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <h2 className="text-3xl md:text-5xl text-textAll font-bold mb-6">Community Engagement</h2>
-        <p className="text-lg text-textAll max-w-3xl mx-auto">
-          We reward individuals who help return lost keys, fostering trust and engagement.
-        </p>
-      </motion.section>
+     
       </div>
     </>
   );
