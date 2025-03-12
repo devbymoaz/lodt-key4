@@ -8,7 +8,7 @@ export default function Footer() {
     const pathname = usePathname();
 
     return (
-        <footer className="bg-gradient-to-r from-[#073B3A] to-[#0A5C5B] text-white py-10 px-6">
+        <footer className="bg-white text-primary py-10 px-6">
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
                 
                 {/* Left Section - Logo */}
@@ -46,7 +46,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="mt-8 text-center text-gray-300 text-sm">
+            <div className="mt-8 text-center text-primary text-sm">
                 &copy; {new Date().getFullYear()} All rights reserved | Lost Key
             </div>
         </footer>
