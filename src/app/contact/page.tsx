@@ -28,22 +28,22 @@ export default function Page() {
   };
 
   return (
-    <>
+    <div className="bg-bgAll">
       <NewsHeroSection
         imageSrc="/pexels-2149489342-31015646.jpg"
         title="Contact Us"
         subtitle="Learn more about our journey and values."
       />
 
-      <div className="max-w-lg mx-auto p-6 bg-white shadow-lg rounded-lg mt-8">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">Get in Touch</h2>
-        <p className="text-center text-gray-600 mb-6">
+      <div className="max-w-lg mx-auto p-6 bg-bgAll shadow-lg rounded-lg mt-8 text-textAll">
+        <h2 className="text-3xl font-bold text-center mb-4">Get in Touch</h2>
+        <p className="text-center  mb-6">
           Fill out the form below and we’ll get back to you soon.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-gray-700 font-medium mb-1">Your Name</label>
+            <label className="block  font-medium mb-1">Your Name</label>
             <input
               type="text"
               name="name"
@@ -56,7 +56,7 @@ export default function Page() {
           </div>
 
           <div>
-            <label className="block text-gray-700 font-medium mb-1">Email Address</label>
+            <label className="block font-medium mb-1">Email Address</label>
             <input
               type="email"
               name="email"
@@ -69,7 +69,7 @@ export default function Page() {
           </div>
 
           <div>
-            <label className="block text-gray-700 font-medium mb-1">Subject</label>
+            <label className="block text-textAll font-medium mb-1">Subject</label>
             <input
               type="text"
               name="subject"
@@ -81,7 +81,7 @@ export default function Page() {
           </div>
 
           <div>
-            <label className="block text-gray-700 font-medium mb-1">Message</label>
+            <label className="block  font-medium mb-1">Message</label>
             <textarea
               name="message"
               value={formData.message}
@@ -101,6 +101,6 @@ export default function Page() {
           </button>
         </form>
       </div>
-    </>
+    </div>
   );
 }

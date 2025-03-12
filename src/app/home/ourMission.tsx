@@ -13,7 +13,7 @@ export default function OurMission() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <h2 className="text-3xl md:text-5xl font-bold ">Our Mission and Values</h2>
+        <h2 className="text-3xl md:text-5xl font-bold ">Our Vision</h2>
         <p className="mt-4 text-base md:text-lg">
         At Lost Key, we are dedicated to providing a reliable and user-friendly solution for lost key recovery. Our mission is to ensure the privacy and security of our users while fostering a sense of community engagement. We believe in innovation and trust, which are at the core of our values. Our team is committed to transparency and creating a platform that not only helps individuals recover their lost keys but also rewards those who assist in the process. With a unique QR code system, we make it easy for finders to return keys to their rightful owners, ensuring a seamless recovery experience for everyone involved.
         </p>
