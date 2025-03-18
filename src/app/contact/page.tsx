@@ -24,7 +24,6 @@ export default function Page() {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // TODO: Send data to API
   };
 
   return (

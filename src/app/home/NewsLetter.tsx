@@ -16,7 +16,6 @@ export default function NewsletterSection() {
                     Subscribe to our newsletter and you will receive the most important news about the Lost Key&reg;
                 </p>
 
-                {/* Email Input */}
                 <div className="mt-4 flex w-full max-w-md">
                     <Button className="bg-white text-primary px-5 rounded-r-lg">→</Button>
                     <input

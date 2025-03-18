@@ -11,13 +11,10 @@ export default function Footer() {
         <footer className="bg-white text-primary py-10 px-6">
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
                 
-                {/* Left Section - Logo */}
                 <div className="flex items-center gap-4">
-                    {/* <Image src="/logo.png" alt="Logo" width={100} height={100} className="rounded-lg" /> */}
-                    <span className="text-2xl font-bold">Lost Key</span>
+                <img src="/WhatsApp_Image_2025-03-12_at_5.01.22_PM__1_-removebg-preview.png" alt="" className="h-12 w-auto" />
                 </div>
 
-                {/* Center Section - Navigation Links */}
                 <div className="flex flex-wrap justify-center gap-6 text-lg font-medium">
                     {navLinks.map(({ href, label }) => (
                         <Link
@@ -32,7 +29,6 @@ export default function Footer() {
                     ))}
                 </div>
 
-                {/* Right Section - Social Icons */}
                 <div className="flex gap-6">
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                         <FaFacebook size={30} className="hover:text-gray-300 transition duration-300" />

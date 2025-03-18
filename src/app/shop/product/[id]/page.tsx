@@ -36,12 +36,12 @@ export default function ProductDetail() {
 
   const handleAddToCart = () => {
     setIsModalOpen(true);
-    setIsBuying(false); // Ensure it's not a buy action
+    setIsBuying(false);  
   };
   
   const handleBuy = () => {
     setIsModalOpen(true);
-    setIsBuying(true); // Mark that "Buy Now" was clicked
+    setIsBuying(true);  
   };
 
   const handleSubmit = () => {
@@ -54,11 +54,9 @@ export default function ProductDetail() {
     };
   
     if (isBuying) {
-      // Navigate to checkout after modal submission
       setIsModalOpen(false);
       router.push("/checkout");
     } else {
-      // Add to cart logic
       const cartItems = JSON.parse(localStorage.getItem("cartItems") || "[]");
       cartItems.push(newCartItem);
       localStorage.setItem("cartItems", JSON.stringify(cartItems));
@@ -115,7 +113,6 @@ export default function ProductDetail() {
           </div>
         </div>
 
-        {/* Modal */}
         <AnimatePresence>
           {isModalOpen && (
             <motion.div

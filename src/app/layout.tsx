@@ -27,9 +27,6 @@ export default function RootLayout({
           <main >{children}</main>
         </div>
         <Footer />
-        {/* <footer className="bg-secondary text-white p-4 text-center">
-          <p>&copy; {new Date().getFullYear()} Lost Key. All rights reserved.</p>
-        </footer> */}
       </body>
     </html>
   );

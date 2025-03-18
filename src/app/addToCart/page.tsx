@@ -63,13 +63,11 @@ export default function AddToCart() {
                   className="rounded-lg object-cover border shadow-md"
                 />
 
-                {/* Product Info */}
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold">{item.title}</h3>
                   <p className="text-gray-600">${item.price}</p>
                 </div>
 
-                {/* Remove Button */}
                 <button
                   onClick={() => removeItem(item.id)}
                   className="text-red-500 hover:text-red-700 transition-transform duration-200 transform hover:scale-110"
@@ -80,7 +78,6 @@ export default function AddToCart() {
             ))}
           </AnimatePresence>
 
-          {/* Total Price & Checkout */}
           <div className="flex flex-col sm:flex-row justify-between items-center mt-6">
             <h3 className="text-2xl font-bold">Total: ${totalPrice.toFixed(2)}</h3>
             <button

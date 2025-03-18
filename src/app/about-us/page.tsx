@@ -7,14 +7,12 @@ export default function AboutUsPage() {
   return (
     <>
     <div className="bg-bgAll">
-      {/* Hero Section */}
       <NewsHeroSection 
         imageSrc="/pexels-mark-thomas-2149938474-31044308.jpg" 
         title="About Us" 
         subtitle="Learn more about our journey and values."
       />
 
-      {/* Our Mission & Vision */}
       <motion.section 
         className="container mx-auto py-16 px-6"
         initial={{ opacity: 0, y: 50 }}
@@ -40,7 +38,6 @@ export default function AboutUsPage() {
         </motion.p>
       </motion.section>
 
-      {/* Our Values */}
       <motion.section 
         className="w-full h-screen flex text-textAll"
         initial={{ opacity: 0, x: -50 }}
@@ -73,7 +70,6 @@ export default function AboutUsPage() {
         </div>
       </motion.section>
 
-      {/* How It Works */}
       <motion.section 
         className="container mx-auto py-16 px-6 text-center"
         initial={{ opacity: 0, y: 50 }}
@@ -115,7 +111,6 @@ export default function AboutUsPage() {
         </div>
       </motion.section>
 
-      {/* Privacy & Security */}
       <motion.section 
         className="container mx-auto py-16 px-6 text-center bg-bgAll"
         initial={{ opacity: 0, y: 50 }}
@@ -128,7 +123,6 @@ export default function AboutUsPage() {
         </p>
       </motion.section>
 
-    {/* Section 2 - Content Left, Image Right */}
     <motion.section 
         className="w-full h-screen flex"
         initial={{ opacity: 0, x: 50 }}

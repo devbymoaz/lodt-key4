@@ -38,13 +38,16 @@ export default function Navigation() {
             </div>
 
             <div className=" px-6 md:px-16 flex w-full items-center justify-between py-4">
-                <Image
-                    src="/next.svg"
-                    alt="WhatsApp Image"
-                    width={48}
-                    height={48}
-                    className="h-6 w-auto text-white"
-                />
+                {/* <Image
+  src="/WhatsApp_Image_2025-03-12_at_5.01.22_PM__1_-removebg-preview.png"
+  alt="WhatsApp Image"
+  layout="intrinsic"
+  width={48} 
+  height={500}
+  className="h-24 w-auto"
+/> */}
+                <img src="/WhatsApp_Image_2025-03-12_at_5.01.22_PM__1_-removebg-preview.png" alt="" className="h-12 w-auto" />
+
 
                 <div className="hidden md:flex gap-8">
                     {navLinks.map(({ href, label }) => (

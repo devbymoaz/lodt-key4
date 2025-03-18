@@ -26,11 +26,9 @@ export default function Checkout() {
   return (
     <div className="h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white shadow-md p-6 rounded-lg w-full max-w-4xl flex flex-col md:flex-row gap-6">
-        {/* Left: Checkout Form */}
         <div className="w-full md:w-2/3">
           <h2 className="text-2xl font-bold mb-4 text-center">Checkout</h2>
           <form onSubmit={handleCheckout}>
-            {/* Name */}
             <div className="mb-4">
               <label className="block text-gray-600">Name</label>
               <input
@@ -43,7 +41,6 @@ export default function Checkout() {
               />
             </div>
 
-            {/* Email */}
             <div className="mb-4">
               <label className="block text-gray-600">Email</label>
               <input
@@ -56,7 +53,6 @@ export default function Checkout() {
               />
             </div>
 
-            {/* Address */}
             <div className="mb-4">
               <label className="block text-gray-600">Address</label>
               <input
@@ -69,7 +65,6 @@ export default function Checkout() {
               />
             </div>
 
-            {/* Payment Method */}
             <div className="mb-4">
               <label className="block text-gray-600">Payment Method</label>
               <select
@@ -82,7 +77,6 @@ export default function Checkout() {
               </select>
             </div>
 
-            {/* Submit Button */}
             <button
               type="submit"
               className="bg-primary text-white px-6 py-2 rounded-md hover:bg-opacity-90 w-full"
@@ -92,7 +86,6 @@ export default function Checkout() {
           </form>
         </div>
 
-        {/* Right: Payment Summary */}
         <div className="w-full md:w-1/3 bg-gray-50 p-4 rounded-lg shadow">
           <h3 className="text-xl font-bold mb-4">Payment Summary</h3>
           <div className="mb-2 flex justify-between">

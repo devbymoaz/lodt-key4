@@ -13,9 +13,7 @@ export default function Page() {
         overlayOpacity="bg-opacity-80"
       />
 
-      {/* How It Works Section */}
       <section className="container mx-auto py-16 px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Left Side - Content */}
         <motion.div
           className="space-y-6"
           initial={{ opacity: 0, x: -50 }}
@@ -36,7 +34,6 @@ export default function Page() {
           </ul>
         </motion.div>
 
-        {/* Right Side - Image */}
         <motion.div
           className="relative"
           initial={{ opacity: 0, x: 50 }}
@@ -53,9 +50,7 @@ export default function Page() {
         </motion.div>
       </section>
 
-      {/* QR Code Process */}
       <section className="container mx-auto py-16 px-6 text-center">
-      {/* Heading */}
       <motion.h2 
         className="text-3xl md:text-5xl font-bold mb-6"
         initial={{ opacity: 0 }}
@@ -65,7 +60,6 @@ export default function Page() {
         Effortless Access with QR Codes
       </motion.h2>
 
-      {/* Description */}
       <motion.p
         className="text-lg max-w-2xl mx-auto mb-8"
         initial={{ opacity: 0 }}
@@ -75,7 +69,6 @@ export default function Page() {
         Once you complete your order, a unique QR code is generated. Simply scan it to access all relevant details instantly.
       </motion.p>
 
-      {/* Additional Content */}
       <motion.p
         className="text-base max-w-xl mx-auto mb-6 "
         initial={{ opacity: 0 }}
@@ -86,7 +79,6 @@ export default function Page() {
         Your QR code acts as a digital key to unlock order details, track shipping, and enjoy exclusive benefits.
       </motion.p>
 
-      {/* QR Code Image */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -101,7 +93,6 @@ export default function Page() {
         />
       </motion.div>
 
-      {/* Additional Benefits */}
       <motion.ul 
         className="max-w-2xl mx-auto mt-8 text-left text-lg space-y-4"
         initial={{ opacity: 0 }}
